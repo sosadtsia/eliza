@@ -14,11 +14,9 @@ func main() {
 
 	intro := doctor.Intro()
 
-	fmt.Println(intro)
+	help()
 
-	fmt.Println("You can type 'quit' to exit the program.")
-	fmt.Println("You can type 'help' to see the list of available commands.")
-	fmt.Println("You can type 'clear' to clear the screen.")
+	fmt.Println(intro)
 
 	for {
 		fmt.Print("-> ")
@@ -52,4 +50,11 @@ func main() {
 
 		fmt.Println(response)
 	}
+}
+
+func help() {
+	fmt.Println("Available commands:")
+	fmt.Println("  quit - Exit the program")
+	fmt.Println("  help - Show this help message")
+	fmt.Println("  clear - Clear the screen")
 }
